@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/output.css" rel="stylesheet">
+</head>
+<body>
+    <main class="text-white bg-transparent h-screen w-auto bg-center bg-cover flex justify-center items-center font-pop" style="background-image: url('/images/mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg');">
+        <div class="h-max min-w-max bg-transparent backdrop-blur-sm border-white border-opacity-25 border-[1px] rounded-xl flex content-center justify-center p-[1rem]">
+            <form class="m-2" id="form">
+                <div class="text-center m-2 text-3xl">Register</div>
+                <input class="w-30 bg-transparent border-b-[1px] text-start focus:outline-none block m-4" style="border-color: rgba(255, 255, 255, 0.5);" type="text" placeholder="Name" id="uname">
+                <input class="w-30 bg-transparent border-b-[1px] text-start focus:outline-none block m-4" style="border-color: rgba(255, 255, 255, 0.5);" type="text" placeholder="Username" id="usname">
+                <div class="w-30 bg-transparent text-start one block mx-4">
+                    <div class="text-xs hidden" id="usugg">
+                    Suggestion: <div class="hover:underline cursor-pointer" id="sugg1"></div>
+                    </div>
+                </div>
+                <input class="w-30 bg-transparent border-b-[1px] text-start focus:outline-none block m-4 " style="border-color: rgba(255, 255, 255, 0.5);"  type="email" placeholder="Email" id="umail">
+                <div class="w-30 bg-transparent text-start focus:outline-none  mx-4 block" id="mailc"></div>
+                <div id="passall">
+                <input class="w-30 bg-transparent border-b-[1px] text-start focus:outline-none block m-4" style="border-color: rgba(255, 255, 255, 0.5);"  type="password" placeholder="Password" id="pass1">
+                <input class="w-30 bg-transparent border-b-[1px] text-start focus:outline-none block m-4 mb-0" style="border-color: rgba(255, 255, 255, 0.5);"  type="password" placeholder="Confirm Password" id="pass2">
+                </div>
+                <div class="w-30 bg-transparent text-start one block mx-4">
+                    <button class="text-xs" id="passshowbtn">
+                    Show password
+                    </button>
+                </div>
+                <div class="w-30 bg-transparent text-start focus:outline-none block mx-4" id="passc"></div>
+                <div class="w-30 bg-transparent text-start focus:outline-none block mx-4" id="formcomplete"></div>
+                <div class="text-center m-1">
+                <button class="p-1 px-2 border-[1px] rounded-md border-opacity-25 border-white mt-4" id="submitbtn">Submit</button></div>
+                <div class="text-center m-2">
+                    Existing user? <a class="underline" href="existinglogin.html" target="_main">Login</a>
+                </div>
+            </form>
+            <div>
+                <div class="text-nowrap hidden" id="formwel"><span id="uname"></span></div>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>
